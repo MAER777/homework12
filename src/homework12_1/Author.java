@@ -8,7 +8,6 @@ public class Author {
     public Author (String authorName, String authorSurname) {
         this.authorName = authorName;
         this.authorSurname = authorSurname;
-        this.authorFullName = authorName + " " + authorSurname;
     }
 
     public String getAuthorName() {
@@ -19,6 +18,6 @@ public class Author {
     }
 
     public String getAuthorFullName() {
-        return this.authorFullName;
+        return this.authorFullName = authorName + " " + authorSurname;
     }
 }

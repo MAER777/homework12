@@ -24,11 +24,11 @@ public class Main {
         System.out.println("Автор книги - " + yilSun.getAuthorName() + " " + yilSun.getAuthorSurname());
 
         Book stream = new Book("Стрим", yilSun, 1230);
-        System.out.println(stream.getNameBook() + ", автор " + stream.getNameAuthor() + ", выпущена в " + stream.getAgePublisher() + " году.");
+        System.out.println(stream.getNameBook() + ", автор " + stream.getNameAuthor().getAuthorName() + " " + stream.getNameAuthor().getAuthorSurname() + ", выпущена в " + stream.getAgePublisher() + " году.");
         stream.setAgePublisher(333);
-        System.out.println(stream.getNameBook() + ", автор " + stream.getNameAuthor() + ", выпущена в " + stream.getAgePublisher() + " году.");
+        System.out.println(stream.getNameBook() + ", автор " + stream.getNameAuthor().getAuthorName() + " " + stream.getNameAuthor().getAuthorSurname() + ", выпущена в " + stream.getAgePublisher() + " году.");
 
         Book yellow = new Book("Желтая пелена", tomasTim, 2020);
-        System.out.println(yellow.getNameBook() + ", автор " + yellow.getNameAuthor() + ", выпущена в " + yellow.getAgePublisher() + " году.");
+        System.out.println(yellow.getNameBook() + ", автор " + yellow.getNameAuthor().getAuthorName() + " " + yellow.getNameAuthor().getAuthorSurname() + ", выпущена в " + yellow.getAgePublisher() + " году.");
     }
 }
